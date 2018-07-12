@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login"
+    tools:context="com.example.work.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#222222">
+        <ImageView
+            android:id="@+id/btn_calendar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_clear_all_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="GRE学习系统"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/btn_UserInfo"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            app:srcCompat="@drawable/ic_contact_mail_black_24dp"/>
+    </RelativeLayout>
+
+    <Chronometer
+        android:id="@+id/Mychronometer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:textSize="66sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#AA1E90FF"
+            android:text="开始学习"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#AA1E90FF"
+            android:text="结束学习"
+            android:textSize="18dp"/>
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#AA1E90FF"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="重置"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                app:srcCompat="@drawable/ic_font_download_black_24dp" />
+
+            <TextView
+                android:id="@+id/PaperBank"
+                android:layout_width="0dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_weight="0.7"
+                android:background="#CCFF0000"
+                android:gravity="center"
+                android:text="试题库"
+                android:textColor="#AA0000CD"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_save_black_24dp"/>
+            <TextView
+                android:id="@+id/MyPaperBank"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="66dp"
+                android:text="我的题库"
+                android:textStyle="bold"
+                android:textSize="27dp"
+                android:gravity="center"
+                android:background="#CCFFFF00"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_folder_open_black_24dp"/>
+             <TextView
+                android:id="@+id/MyWordBank"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="66dp"
+                android:text="我的单词本"
+                 android:textStyle="bold"
+                android:textSize="27dp"
+                android:gravity="center"
+                android:background="#CC0000CD"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

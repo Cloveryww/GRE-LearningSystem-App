@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+    <TextView
+        android:id="@+id/InMyquestion_No"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="50dp"
+        android:text="1."
+        android:textSize="30dp"
+
+        android:textColor="#000000"
+        android:gravity="center_vertical|center"/>
+    <TextView
+        android:id="@+id/InMyquestion_Name"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="50dp"
+        android:text="我的题库1"
+        android:textSize="30dp"
+
+        android:textColor="#000000"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>

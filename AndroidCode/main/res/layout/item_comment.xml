@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/InComment_From"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:text="用户名"
+            android:textColor="#0000FF"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/InComment_Time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="2017年12月30日"
+            android:textColor="#C0C0C0"
+            android:textSize="15dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/InComment_NiceNum"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="match_parent"
+            android:text="100"
+            android:textColor="#C0C0C0"
+            android:textSize="15dp"
+            android:gravity="center_vertical|right"/>
+        <ImageView
+            android:id="@+id/InComment_Nice_im"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@mipmap/nice_tag"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/InComment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂时没有评论内容暂时没有评论内容暂时没有评论内容暂时没有评论内容。"
+        android:textSize="18dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>

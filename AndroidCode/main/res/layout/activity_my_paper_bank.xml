@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.work.MyPaperBankActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#222222">
+        <ImageView
+            android:id="@+id/Inmypaperbank_backbtn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/Inmypaperbank_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|start"
+            android:text="首页"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="我的题库"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <com.example.work.item.WrapContentListview
+        android:id="@+id/Inmypaperbank_questionlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:scrollbars="vertical"
+        android:scrollingCache="true">
+
+    </com.example.work.item.WrapContentListview>
+</LinearLayout>
